@@ -6,18 +6,51 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
 
-		<a-marker preset='custom' type='pattern' url='pattern-conan.patt'>
-            <a-entity
-            position="0 0 0"
-            rotation="90 0 0"
-            scale="0.01 0.01 0.01"
-            gltf-model="models/pipe/scene.gltf"
-            ></a-entity>
-        </a-marker>
+            <a-marker preset='custom' type='pattern' url='pattern-conan.patt'>
+                <a-entity
+                position="0 0 0"
+                rotation="90 0 0"
+                scale="0.01 0.01 0.01"
+                gltf-model="models/pipe/scene.gltf"
+                ></a-entity>
+            </a-marker>
 
-        <a-marker type='pattern' patternUrl='pattern-mymarker.patt'>
-            <a-box position='0 0.5 0' material='color: red;'></a-box>
-        </a-marker>
+            <a-marker type='pattern' patternUrl='pattern-detective.patt'>
+                <a-box position='0 0.5 0' material='color: red;'></a-box>
+            </a-marker>
+
+            <!-- Buttons -->
+            <a-entity position="0 1 0">
+                <!-- Button 1 -->
+                <a-entity
+                        position="-1 0 0"
+                        text="value: Michael; align: center"
+                        link="href: index.html"
+                        geometry="primitive: plane; width: 2; height: 0.5"
+                        material="color: green"
+                ></a-entity>
+
+                <!-- Button 2 -->
+                <a-entity
+                        position="0 0 0"
+                        text="value: Julian; align: center"
+                        link="href: julian.html"
+                        geometry="primitive: plane; width: 2; height: 0.5"
+                        material="color: blue"
+                ></a-entity>
+
+                <!-- Button 3 -->
+                <a-entity
+                        position="1 0 0"
+                        text="value: Kenan; align: center"
+                        link="href: kenan.html"
+                        geometry="primitive: plane; width: 2; height: 0.5"
+                        material="color: red"
+                ></a-entity>
+            </a-entity>
+
+
+
 
         <a-entity camera></a-entity>
         </a-scene>
