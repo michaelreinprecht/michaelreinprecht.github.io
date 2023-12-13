@@ -7,6 +7,14 @@
         <a-scene embedded arjs>
 
             <a-marker preset='custom' type='pattern' url='pattern-conan.patt'>
+				<a-text
+                    value="Suche den nächsten Tipp!\nTesting"
+                    position="0 -1 1"
+                    rotation="-90 0 0"
+					align="center"
+                    scale="0.45 0.45 0.45"
+                    color="white"
+                ></a-text>
                 <a-entity
                     position="0 0 0"
                     rotation="270 0 0"
@@ -15,14 +23,7 @@
                 ></a-entity>
 				<a-plane position="0 0 0" rotation="-90 0 0" width="1.5" height="0.3" color="black">
 				</a-plane>
-				<a-text
-                    value="Suche den nächsten Tipp!\nTesting"
-                    position="0 -1 0"
-                    rotation="-90 0 0"
-					align="center"
-                    scale="0.45 0.45 0.45"
-                    color="white"
-                ></a-text>
+
             </a-marker>
 
             <a-marker preset='custom' type='pattern' url='pattern-glass.patt'>
