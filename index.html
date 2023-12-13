@@ -13,7 +13,7 @@
                     rotation="-90 0 0"
 					align="center"
                     scale="0.45 0.45 0.45"
-                    color="white"
+                    color="black"
                 ></a-text>
                 <a-entity
                     position="0 0 0"
@@ -21,7 +21,8 @@
                     scale="0.75 0.75 0.75"
                     gltf-model="models/conan/scene.gltf"
                 ></a-entity>
-				<a-plane position="0 -0.4 0" rotation="-90 0 -0.1" width="1.5" height="0.3" color="black">
+				<a-plane position="0 -0.4 0" rotation="-90 0 -0.1" width="1.5" height="1">
+					<a-plane-material color="white" transparent="true" opacity="0.6"></a-plane-material>
 				</a-plane>
 
             </a-marker>
