@@ -64,6 +64,24 @@
 				<a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0.4" width="1.5" height="3.2" color="white"></a-plane>
             </a-marker>
 
+            <a-marker preset='custom' type='pattern' url='pattern-key-icon.patt'>
+				<a-text
+                    value="\nSuche den nächsten Tipp!\nTesting2"
+                    position="0 -0.4 0.3"
+                    rotation="-90 0 0"
+					align="center"
+                    scale="0.45 0.45 0.45"
+                    color="black"
+                ></a-text>
+                <a-entity
+                    position="0 0.2 0"
+                    rotation="270 0 0"
+                    scale="0.1 0.1 0.1"
+                    gltf-model="models/key/scene.gltf"
+                ></a-entity>
+				<a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0.4" width="1.5" height="3.2" color="white"></a-plane>
+            </a-marker>
+
             <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 47.561744; longitude: 9.754717" scale="100 100 100"></a-entity>
             <a-entity> camera </a-entity>
         </a-scene>
