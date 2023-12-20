@@ -83,8 +83,8 @@
             </a-marker>
 
             <!-- Add a button that links to julian.html -->
-            <a-entity position="0 1.5 -3">
-                <a-plane color="blue" width="2" height="0.5" onclick="goToJulianPage()"></a-plane>
+            <a-entity position="0 0 -3">
+                <a-plane color="blue" width="2" height="0.5" onclick="goToJulianPage()" onTouchStart="goToJulianPage()"></a-plane>
                 <a-text value="Go to Julian's Page" align="center" position="0 0 0.1"></a-text>
             </a-entity>
 
