@@ -7,5 +7,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="aframe" level="application" />
     <orderEntry type="library" name="aframe-ar" level="application" />
+    <orderEntry type="library" name="ar-threex-location-only" level="application" />
   </component>
 </module>
