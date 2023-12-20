@@ -46,6 +46,7 @@
 				<a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0.4" width="1.5" height="3.2" color="white"></a-plane>
             </a-marker>
 
+<!-- Pipe icon + model
             <a-marker preset='custom' type='pattern' url='pattern-pipe-icon.patt'>
 				<a-text
                     value="\nSuche den nächsten Tipp!\nTesting5"
@@ -63,6 +64,27 @@
                 ></a-entity>
 				<a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0.4" width="1.5" height="3.2" color="white"></a-plane>
             </a-marker>
+			-->
+			
+			<!-- Testing letter model -->
+			<a-marker preset='custom' type='pattern' url='pattern-pipe-icon.patt'>
+				<a-text
+                    value="\nDu näherst dich der Lösung!\nDer nächste Tipp an der Tafel sei.\nDer Hoffi stehe dir bei!"
+                    position="0 -0.4 0.3"
+                    rotation="-90 0 0"
+					align="center"
+                    scale="0.45 0.45 0.45"
+                    color="black"
+                ></a-text>
+                <a-entity
+                    position="0 0 0.2"
+                    rotation="270 0 0"
+                    scale="0.005 0.005 0.005"
+                    gltf-model="models/pipe/scene.gltf"
+                ></a-entity>
+				<a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0.4" width="1.5" height="3.2" color="white"></a-plane>
+            </a-marker>
+
 
             <a-marker preset='custom' type='pattern' url='pattern-key-icon.patt'>
 				<a-text
@@ -77,7 +99,7 @@
                     position="0 0 0"
                     rotation="270 0 0"
                     scale="0.005 0.005 0.005"
-                    gltf-model="models/pipe/scene.gltf"
+                    gltf-model="models/key/scene.gltf"
                 ></a-entity>
 				<a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0.4" width="1.5" height="3.2" color="white"></a-plane>
             </a-marker>
