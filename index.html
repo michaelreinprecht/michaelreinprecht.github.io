@@ -7,6 +7,9 @@
     <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
 
     <body style="margin : 0px; overflow: hidden;">
+
+        <button style="position: absolute; top: 10px; left: 10px; z-index: 100;" onclick="goToJulianPage()">Go to Julian's Page</button>
+
         <a-scene embedded arjs vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
 
             <a-marker preset='custom' type='pattern' url='pattern-conan.patt'>
@@ -83,7 +86,7 @@
             </a-marker>
 
             <!-- Add a button that links to julian.html -->
-            <a-entity position="0 0.5 -3">
+            <a-entity position="0 0.5 -3" cursor="rayOrigin: mouse">
                 <a-plane color="blue" width="2" height="0.5" onclick="goToJulianPage()" onTouchStart="goToJulianPage()"></a-plane>
                 <a-text value="Go to Julian's Page" align="center" position="0 0 0.1"></a-text>
             </a-entity>
