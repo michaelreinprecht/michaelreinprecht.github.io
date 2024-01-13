@@ -10,26 +10,27 @@
 
         <a-scene embedded arjs artoolkit='sourceType: webcam;' renderer='logarithmicDepthBuffer: true;'>
             <a-marker preset='custom' type='pattern' url='pattern-conan.patt'>
-				<a-text
-                    value="\n\n\n\n\n\n\n\n\n\n\nI can move up and down,
-					\nyet never left nor right.
-					\nPart of me is black,
-					\nyet I contain white.
-					\nI am a board,
-					\nbut you can play no game on me."
-                    position="0 -0.4 0.3"
-                    rotation="-90 0 0"
-					align="center"
-                    scale="0.35 0.35 0.35"
-                    color="#3C2622"
-                ></a-text>
+
                 <a-entity
                     position="0 0 0"
                     rotation="270 0 0"
                     scale="0.75 0.75 0.75"
                     gltf-model="models/conan/scene.gltf"
                 ></a-entity>
-                <a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0.8" width="1.5" height="3.2" color="white"></a-plane>
+                <a-plane position="0 -0.5 0.3" rotation="-90 0 0" material="opacity: 0." width="1.5" height="3.2" color="white"></a-plane>
+                <a-text
+                        value="\n\n\n\n\n\n\n\n\n\n\nI can move up and down,
+					\nyet never left nor right.
+					\nPart of me is black,
+					\nyet I contain white.
+					\nI am a board,
+					\nbut you can play no game on me."
+                        position="0 -0.4 0.3"
+                        rotation="-90 0 0"
+                        align="center"
+                        scale="0.35 0.35 0.35"
+                        color="#3C2622"
+                ></a-text>
             </a-marker>
 
             <a-marker preset='custom' type='pattern' url='pattern-lupe-icon.patt'>
